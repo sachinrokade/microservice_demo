@@ -1,0 +1,20 @@
+2020-03-29 20:21:31.847  INFO 4032 --- [main] com.admin.AdminServerApplicationTests    : Starting AdminServerApplicationTests on Sachin with PID 4032 (started by Sachin in D:\microservice_demo-master\Admin_Server)
+2020-03-29 20:21:31.899  INFO 4032 --- [main] com.admin.AdminServerApplicationTests    : No active profile set, falling back to default profiles: default
+2020-03-29 20:21:42.823  INFO 4032 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-29 20:21:43.579  WARN 4032 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-29 20:21:47.215  INFO 4032 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-29 20:21:47.397  INFO 4032 --- [main] com.admin.AdminServerApplicationTests    : Started AdminServerApplicationTests in 16.595 seconds (JVM running for 20.482)
+2020-03-29 20:22:08.102  INFO 8476 --- [main] com.admin.AdminServerApplicationTests    : Starting AdminServerApplicationTests on Sachin with PID 8476 (started by Sachin in D:\microservice_demo-master\Admin_Server)
+2020-03-29 20:22:08.106  INFO 8476 --- [main] com.admin.AdminServerApplicationTests    : No active profile set, falling back to default profiles: default
+2020-03-29 20:22:12.405  INFO 8476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-29 20:22:12.761  WARN 8476 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-29 20:22:14.758  INFO 8476 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-29 20:22:14.903  INFO 8476 --- [main] com.admin.AdminServerApplicationTests    : Started AdminServerApplicationTests in 7.467 seconds (JVM running for 9.207)
+2020-03-29 20:22:29.317  INFO 8476 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-29 20:24:15.073  INFO 7004 --- [main] com.admin.AdminServerApplicationTests    : Starting AdminServerApplicationTests on Sachin with PID 7004 (started by Sachin in D:\microservice_demo-master\Admin_Server)
+2020-03-29 20:24:15.076  INFO 7004 --- [main] com.admin.AdminServerApplicationTests    : No active profile set, falling back to default profiles: default
+2020-03-29 20:24:19.163  INFO 7004 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-29 20:24:19.560  WARN 7004 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-29 20:24:21.669  INFO 7004 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-29 20:24:21.848  INFO 7004 --- [main] com.admin.AdminServerApplicationTests    : Started AdminServerApplicationTests in 7.472 seconds (JVM running for 9.123)
+2020-03-29 20:24:22.283  INFO 7004 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

@@ -1,0 +1,320 @@
+2020-03-22 20:34:22.415  INFO 6900 --- [restartedMain] com.admin.AdminServerApplication         : Starting AdminServerApplication on Sachin with PID 6900 (D:\microservice_demo-master\Admin_Server\target\classes started by Sachin in D:\microservice_demo-master\Admin_Server)
+2020-03-22 20:34:22.813  INFO 6900 --- [restartedMain] com.admin.AdminServerApplication         : No active profile set, falling back to default profiles: default
+2020-03-22 20:34:26.404  INFO 6900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-22 20:34:26.407  INFO 6900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-22 20:36:04.388  INFO 6900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-03-22 20:36:12.681  INFO 6900 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-22 20:36:12.685  INFO 6900 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2020-03-22 20:36:18.275  INFO 6900 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_201\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;%JAVA_HOME%;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\nodejs\;C:\Program Files\apache-maven-3.6.3/bin;C:\Users\Sachin\AppData\Roaming\npm;.]
+2020-03-22 20:36:28.345  INFO 6900 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-22 20:36:28.360  INFO 6900 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 121951 ms
+2020-03-22 20:36:35.679  INFO 6900 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-22 20:36:35.960  WARN 6900 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-03-22 20:36:43.217  WARN 6900 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2020-03-22 20:36:43.233  INFO 6900 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-22 20:36:43.373  INFO 6900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2020-03-22 20:36:43.373  INFO 6900 --- [restartedMain] com.admin.AdminServerApplication         : Started AdminServerApplication in 167.345 seconds (JVM running for 179.183)
+2020-03-22 20:36:45.400  INFO 6900 --- [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-22 20:36:45.404  INFO 6900 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-22 20:36:45.432  INFO 6900 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 28 ms
+2020-03-22 20:37:27.065 ERROR 6900 --- [http-nio-9091-exec-1] o.a.catalina.connector.CoyoteAdapter     : Exception while processing an asynchronous request
+
+java.lang.IllegalStateException: Calling [asyncError()] is not valid for a request with Async state [MUST_DISPATCH]
+	at org.apache.coyote.AsyncStateMachine.asyncError(AsyncStateMachine.java:440) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:512) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.Request.action(Request.java:430) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.AsyncContextImpl.setErrorState(AsyncContextImpl.java:382) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.asyncDispatch(CoyoteAdapter.java:239) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProcessor.dispatch(AbstractProcessor.java:241) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:53) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2020-03-22 20:38:15.031 ERROR 6900 --- [http-nio-9091-exec-3] o.a.catalina.connector.CoyoteAdapter     : Exception while processing an asynchronous request
+
+java.lang.IllegalStateException: Calling [asyncError()] is not valid for a request with Async state [MUST_DISPATCH]
+	at org.apache.coyote.AsyncStateMachine.asyncError(AsyncStateMachine.java:440) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:512) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.Request.action(Request.java:430) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.AsyncContextImpl.setErrorState(AsyncContextImpl.java:382) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.connector.CoyoteAdapter.asyncDispatch(CoyoteAdapter.java:239) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProcessor.dispatch(AbstractProcessor.java:241) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:53) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2020-03-22 20:51:45.116 ERROR 6900 --- [reactor-http-nio-4] r.n.resources.PooledConnectionProvider   : [id: 0x4d0a8092, L:/127.0.0.1:53083 - R:Sachin/127.0.0.1:9093] Pooled connection observed an error
+
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_201]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_201]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_201]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_201]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_201]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-buffer-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:648) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:583) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:500) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:462) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897) [netty-common-4.1.31.Final.jar:4.1.31.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2020-03-22 20:51:52.299 ERROR 6900 --- [reactor-http-nio-3] r.n.resources.PooledConnectionProvider   : [id: 0x710bcea6, L:/127.0.0.1:53111 - R:Sachin/127.0.0.1:9092] Pooled connection observed an error
+
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_201]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_201]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_201]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_201]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_201]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-buffer-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:648) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:583) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:500) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:462) [netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897) [netty-common-4.1.31.Final.jar:4.1.31.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2020-03-22 20:51:53.734  INFO 6900 --- [reactor-http-nio-1] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=00d68e25dbf0, version=2, registration=Registration(name=Client 1, managementUrl=http://Sachin:9092/actuator, healthUrl=http://Sachin:9092/actuator/health, serviceUrl=http://Sachin:9092/, source=http-api), registered=true, statusInfo=StatusInfo(status=UP, details={}), statusTimestamp=2020-03-22T15:08:19.533Z, info=Info(values={}), endpoints=Endpoints(endpoints={httptrace=Endpoint(id=httptrace, url=http://Sachin:9092/actuator/httptrace), caches=Endpoint(id=caches, url=http://Sachin:9092/actuator/caches), loggers=Endpoint(id=loggers, url=http://Sachin:9092/actuator/loggers), logfile=Endpoint(id=logfile, url=http://Sachin:9092/actuator/logfile), health=Endpoint(id=health, url=http://Sachin:9092/actuator/health), env=Endpoint(id=env, url=http://Sachin:9092/actuator/env), heapdump=Endpoint(id=heapdump, url=http://Sachin:9092/actuator/heapdump), scheduledtasks=Endpoint(id=scheduledtasks, url=http://Sachin:9092/actuator/scheduledtasks), mappings=Endpoint(id=mappings, url=http://Sachin:9092/actuator/mappings), beans=Endpoint(id=beans, url=http://Sachin:9092/actuator/beans), configprops=Endpoint(id=configprops, url=http://Sachin:9092/actuator/configprops), threaddump=Endpoint(id=threaddump, url=http://Sachin:9092/actuator/threaddump), metrics=Endpoint(id=metrics, url=http://Sachin:9092/actuator/metrics), conditions=Endpoint(id=conditions, url=http://Sachin:9092/actuator/conditions), auditevents=Endpoint(id=auditevents, url=http://Sachin:9092/actuator/auditevents), info=Endpoint(id=info, url=http://Sachin:9092/actuator/info), jolokia=Endpoint(id=jolokia, url=http://Sachin:9092/actuator/jolokia)}), buildVersion=null, tags=Tags(values={}))
+
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: Sachin/127.0.0.1:9092
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_201]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_201]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:636) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:583) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:500) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:462) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897) ~[netty-common-4.1.31.Final.jar:4.1.31.Final]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_201]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Assembly trace from producer [reactor.core.publisher.MonoCreate] :
+	reactor.core.publisher.Mono.create(Mono.java:182)
+	reactor.netty.resources.PooledConnectionProvider.acquire(PooledConnectionProvider.java:121)
+	reactor.netty.tcp.TcpResources.acquire(TcpResources.java:158)
+	reactor.netty.tcp.TcpClientConnect.connect(TcpClientConnect.java:51)
+	reactor.netty.tcp.TcpClientOperator.connect(TcpClientOperator.java:43)
+	reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.lambda$subscribe$0(HttpClientConnect.java:317)
+	reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:53)
+	reactor.core.publisher.Mono.subscribe(Mono.java:3608)
+	reactor.core.publisher.FluxRetryPredicate$RetryPredicateSubscriber.resubscribe(FluxRetryPredicate.java:123)
+	reactor.core.publisher.MonoRetryPredicate.subscribe(MonoRetryPredicate.java:51)
+	reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.subscribe(HttpClientConnect.java:321)
+	reactor.core.publisher.MonoFlatMapMany.subscribe(MonoFlatMapMany.java:49)
+	reactor.core.publisher.MonoNext.subscribe(MonoNext.java:40)
+	reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:74)
+	reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:74)
+	reactor.core.publisher.MonoMapFuseable.subscribe(MonoMapFuseable.java:59)
+	reactor.core.publisher.Mono.subscribe(Mono.java:3608)
+	reactor.core.publisher.FluxRetry$RetrySubscriber.resubscribe(FluxRetry.java:109)
+	reactor.core.publisher.MonoRetry.subscribe(MonoRetry.java:49)
+	reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:150)
+	reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:67)
+	reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:114)
+	reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2041)
+	reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:155)
+	reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:1849)
+	reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:1723)
+	reactor.core.publisher.FluxMap$MapSubscriber.onSubscribe(FluxMap.java:86)
+	reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+	reactor.core.publisher.MonoMap.subscribe(MonoMap.java:55)
+	reactor.core.publisher.MonoSwitchIfEmpty.subscribe(MonoSwitchIfEmpty.java:44)
+	reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	reactor.core.publisher.MonoSwitchIfEmpty.subscribe(MonoSwitchIfEmpty.java:44)
+	reactor.core.publisher.MonoLogFuseable.subscribe(MonoLogFuseable.java:53)
+	reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:74)
+	reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	reactor.core.publisher.MonoMapFuseable.subscribe(MonoMapFuseable.java:59)
+	reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:150)
+	reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2041)
+	reactor.core.publisher.MonoFlatMap$FlatMapMain.onSubscribe(MonoFlatMap.java:103)
+	reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+	reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	reactor.core.publisher.Mono.subscribe(Mono.java:3608)
+	reactor.core.publisher.FluxRetryWhen.subscribe(FluxRetryWhen.java:85)
+	reactor.core.publisher.MonoRetryWhen.subscribe(MonoRetryWhen.java:50)
+	reactor.core.publisher.Mono.subscribe(Mono.java:3608)
+	reactor.core.publisher.MonoIgnorePublisher.subscribe(MonoIgnorePublisher.java:41)
+	reactor.core.publisher.MonoDoFinallyFuseable.subscribe(MonoDoFinallyFuseable.java:48)
+	reactor.core.publisher.Mono.subscribe(Mono.java:3608)
+	reactor.core.publisher.FluxFlatMap$FlatMapMain.onNext(FluxFlatMap.java:389)
+	reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:121)
+	reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.tryOnNext(FluxFilterFuseable.java:143)
+	reactor.core.publisher.FluxIterable$IterableSubscriptionConditional.slowPath(FluxIterable.java:515)
+	reactor.core.publisher.FluxIterable$IterableSubscriptionConditional.request(FluxIterable.java:473)
+	reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.request(FluxFilterFuseable.java:185)
+	reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:162)
+	reactor.core.publisher.FluxFlatMap$FlatMapMain.onSubscribe(FluxFlatMap.java:335)
+	reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:90)
+	reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onSubscribe(FluxFilterFuseable.java:82)
+	reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:135)
+	reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:63)
+	reactor.core.publisher.FluxFilterFuseable.subscribe(FluxFilterFuseable.java:52)
+	reactor.core.publisher.FluxMapFuseable.subscribe(FluxMapFuseable.java:63)
+	reactor.core.publisher.FluxFlatMap.subscribe(FluxFlatMap.java:97)
+	reactor.core.publisher.MonoIgnoreElements.subscribe(MonoIgnoreElements.java:37)
+	reactor.core.publisher.Mono.subscribe(Mono.java:3608)
+	reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:442)
+	reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:244)
+	reactor.core.publisher.FluxSubscribeOn$SubscribeOnSubscriber.onNext(FluxSubscribeOn.java:151)
+	reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:192)
+	reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:192)
+	reactor.core.publisher.FluxInterval$IntervalRunnable.run(FluxInterval.java:123)
+	reactor.core.scheduler.PeriodicWorkerTask.call(PeriodicWorkerTask.java:59)
+	reactor.core.scheduler.PeriodicWorkerTask.run(PeriodicWorkerTask.java:73)
+	java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+Error has been observed by the following operator(s):
+	|_	Mono.create ? reactor.netty.resources.PooledConnectionProvider.acquire(PooledConnectionProvider.java:121)
+	|_	Mono.create ? reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.subscribe(HttpClientConnect.java:285)
+	|_	Mono.retry ? reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.subscribe(HttpClientConnect.java:320)
+	|_	Mono.flatMapMany ? reactor.netty.http.client.HttpClientFinalizer.responseConnection(HttpClientFinalizer.java:85)
+	|_	Flux.next ? org.springframework.http.client.reactive.ReactorClientHttpConnector.connect(ReactorClientHttpConnector.java:112)
+	|_	Mono.doOnRequest ? org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.exchange(ExchangeFunctions.java:104)
+	|_	Mono.doOnCancel ? org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.exchange(ExchangeFunctions.java:105)
+	|_	Mono.map ? org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.exchange(ExchangeFunctions.java:106)
+	|_	Mono.retry ? de.codecentric.boot.admin.server.web.client.InstanceExchangeFilterFunctions.lambda$retry$13(InstanceExchangeFilterFunctions.java:203)
+	|_	Mono.flatMap ? de.codecentric.boot.admin.server.web.client.InstanceExchangeFilterFunctions.lambda$convertLegacyEndpoint$8(InstanceExchangeFilterFunctions.java:153)
+	|_	Mono.flatMap ? de.codecentric.boot.admin.server.web.client.InstanceExchangeFilterFunctions.lambda$setInstance$1(InstanceExchangeFilterFunctions.java:76)
+	|_	Mono.switchIfEmpty ? org.springframework.web.reactive.function.client.DefaultWebClient$DefaultRequestBodyUriSpec.exchange(DefaultWebClient.java:321)
+	|_	Mono.log ? de.codecentric.boot.admin.server.services.StatusUpdater.doUpdateStatus(StatusUpdater.java:74)
+	|_	Mono.flatMap ? de.codecentric.boot.admin.server.services.StatusUpdater.doUpdateStatus(StatusUpdater.java:75)
+
+Caused by: java.net.ConnectException: Connection refused: no further information
+	... 10 common frames omitted
+
+2020-03-22 20:52:03.631  INFO 6900 --- [reactor-http-nio-2] d.c.b.a.server.services.StatusUpdater    : Couldn't retrieve status for Instance(id=dc038f04d894, version=2, registration=Registration(name=Client 2, managementUrl=http://Sachin:9093/actuator, healthUrl=http://Sachin:9093/actuator/health, serviceUrl=http://Sachin:9093/, source=http-api), registered=true, statusInfo=StatusInfo(status=UP, details={}), statusTimestamp=2020-03-22T15:07:06.609Z, info=Info(values={}), endpoints=Endpoints(endpoints={httptrace=Endpoint(id=httptrace, url=http://Sachin:9093/actuator/httptrace), caches=Endpoint(id=caches, url=http://Sachin:9093/actuator/caches), loggers=Endpoint(id=loggers, url=http://Sachin:9093/actuator/loggers), logfile=Endpoint(id=logfile, url=http://Sachin:9093/actuator/logfile), health=Endpoint(id=health, url=http://Sachin:9093/actuator/health), env=Endpoint(id=env, url=http://Sachin:9093/actuator/env), heapdump=Endpoint(id=heapdump, url=http://Sachin:9093/actuator/heapdump), scheduledtasks=Endpoint(id=scheduledtasks, url=http://Sachin:9093/actuator/scheduledtasks), mappings=Endpoint(id=mappings, url=http://Sachin:9093/actuator/mappings), beans=Endpoint(id=beans, url=http://Sachin:9093/actuator/beans), configprops=Endpoint(id=configprops, url=http://Sachin:9093/actuator/configprops), threaddump=Endpoint(id=threaddump, url=http://Sachin:9093/actuator/threaddump), metrics=Endpoint(id=metrics, url=http://Sachin:9093/actuator/metrics), conditions=Endpoint(id=conditions, url=http://Sachin:9093/actuator/conditions), auditevents=Endpoint(id=auditevents, url=http://Sachin:9093/actuator/auditevents), info=Endpoint(id=info, url=http://Sachin:9093/actuator/info), jolokia=Endpoint(id=jolokia, url=http://Sachin:9093/actuator/jolokia)}), buildVersion=null, tags=Tags(values={}))
+
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: Sachin/127.0.0.1:9093
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_201]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_201]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:636) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:583) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:500) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:462) ~[netty-transport-4.1.31.Final.jar:4.1.31.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897) ~[netty-common-4.1.31.Final.jar:4.1.31.Final]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_201]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Assembly trace from producer [reactor.core.publisher.MonoCreate] :
+	reactor.core.publisher.Mono.create(Mono.java:182)
+	reactor.netty.resources.PooledConnectionProvider.acquire(PooledConnectionProvider.java:121)
+	reactor.netty.tcp.TcpResources.acquire(TcpResources.java:158)
+	reactor.netty.tcp.TcpClientConnect.connect(TcpClientConnect.java:51)
+	reactor.netty.tcp.TcpClientOperator.connect(TcpClientOperator.java:43)
+	reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.lambda$subscribe$0(HttpClientConnect.java:317)
+	reactor.core.publisher.MonoCreate.subscribe(MonoCreate.java:53)
+	reactor.core.publisher.Mono.subscribe(Mono.java:3608)
+	reactor.core.publisher.FluxRetryPredicate$RetryPredicateSubscriber.resubscribe(FluxRetryPredicate.java:123)
+	reactor.core.publisher.MonoRetryPredicate.subscribe(MonoRetryPredicate.java:51)
+	reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.subscribe(HttpClientConnect.java:321)
+	reactor.core.publisher.MonoFlatMapMany.subscribe(MonoFlatMapMany.java:49)
+	reactor.core.publisher.MonoNext.subscribe(MonoNext.java:40)
+	reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:74)
+	reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:74)
+	reactor.core.publisher.MonoMapFuseable.subscribe(MonoMapFuseable.java:59)
+	reactor.core.publisher.Mono.subscribe(Mono.java:3608)
+	reactor.core.publisher.FluxRetry$RetrySubscriber.resubscribe(FluxRetry.java:109)
+	reactor.core.publisher.MonoRetry.subscribe(MonoRetry.java:49)
+	reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:150)
+	reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:67)
+	reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:114)
+	reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2041)
+	reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:155)
+	reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:1849)
+	reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:1723)
+	reactor.core.publisher.FluxMap$MapSubscriber.onSubscribe(FluxMap.java:86)
+	reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+	reactor.core.publisher.MonoMap.subscribe(MonoMap.java:55)
+	reactor.core.publisher.MonoSwitchIfEmpty.subscribe(MonoSwitchIfEmpty.java:44)
+	reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	reactor.core.publisher.MonoSwitchIfEmpty.subscribe(MonoSwitchIfEmpty.java:44)
+	reactor.core.publisher.MonoLogFuseable.subscribe(MonoLogFuseable.java:53)
+	reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:74)
+	reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	reactor.core.publisher.MonoMapFuseable.subscribe(MonoMapFuseable.java:59)
+	reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:150)
+	reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2041)
+	reactor.core.publisher.MonoFlatMap$FlatMapMain.onSubscribe(MonoFlatMap.java:103)
+	reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+	reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	reactor.core.publisher.Mono.subscribe(Mono.java:3608)
+	reactor.core.publisher.FluxRetryWhen.subscribe(FluxRetryWhen.java:85)
+	reactor.core.publisher.MonoRetryWhen.subscribe(MonoRetryWhen.java:50)
+	reactor.core.publisher.Mono.subscribe(Mono.java:3608)
+	reactor.core.publisher.MonoIgnorePublisher.subscribe(MonoIgnorePublisher.java:41)
+	reactor.core.publisher.MonoDoFinallyFuseable.subscribe(MonoDoFinallyFuseable.java:48)
+	reactor.core.publisher.Mono.subscribe(Mono.java:3608)
+	reactor.core.publisher.FluxFlatMap$FlatMapMain.onNext(FluxFlatMap.java:389)
+	reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:121)
+	reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.tryOnNext(FluxFilterFuseable.java:143)
+	reactor.core.publisher.FluxIterable$IterableSubscriptionConditional.slowPath(FluxIterable.java:515)
+	reactor.core.publisher.FluxIterable$IterableSubscriptionConditional.request(FluxIterable.java:473)
+	reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.request(FluxFilterFuseable.java:185)
+	reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:162)
+	reactor.core.publisher.FluxFlatMap$FlatMapMain.onSubscribe(FluxFlatMap.java:335)
+	reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:90)
+	reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onSubscribe(FluxFilterFuseable.java:82)
+	reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:135)
+	reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:63)
+	reactor.core.publisher.FluxFilterFuseable.subscribe(FluxFilterFuseable.java:52)
+	reactor.core.publisher.FluxMapFuseable.subscribe(FluxMapFuseable.java:63)
+	reactor.core.publisher.FluxFlatMap.subscribe(FluxFlatMap.java:97)
+	reactor.core.publisher.MonoIgnoreElements.subscribe(MonoIgnoreElements.java:37)
+	reactor.core.publisher.Mono.subscribe(Mono.java:3608)
+	reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:442)
+	reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:244)
+	reactor.core.publisher.FluxSubscribeOn$SubscribeOnSubscriber.onNext(FluxSubscribeOn.java:151)
+	reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:192)
+	reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:192)
+	reactor.core.publisher.FluxInterval$IntervalRunnable.run(FluxInterval.java:123)
+	reactor.core.scheduler.PeriodicWorkerTask.call(PeriodicWorkerTask.java:59)
+	reactor.core.scheduler.PeriodicWorkerTask.run(PeriodicWorkerTask.java:73)
+	java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+Error has been observed by the following operator(s):
+	|_	Mono.create ? reactor.netty.resources.PooledConnectionProvider.acquire(PooledConnectionProvider.java:121)
+	|_	Mono.create ? reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.subscribe(HttpClientConnect.java:285)
+	|_	Mono.retry ? reactor.netty.http.client.HttpClientConnect$MonoHttpConnect.subscribe(HttpClientConnect.java:320)
+	|_	Mono.flatMapMany ? reactor.netty.http.client.HttpClientFinalizer.responseConnection(HttpClientFinalizer.java:85)
+	|_	Flux.next ? org.springframework.http.client.reactive.ReactorClientHttpConnector.connect(ReactorClientHttpConnector.java:112)
+	|_	Mono.doOnRequest ? org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.exchange(ExchangeFunctions.java:104)
+	|_	Mono.doOnCancel ? org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.exchange(ExchangeFunctions.java:105)
+	|_	Mono.map ? org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.exchange(ExchangeFunctions.java:106)
+	|_	Mono.retry ? de.codecentric.boot.admin.server.web.client.InstanceExchangeFilterFunctions.lambda$retry$13(InstanceExchangeFilterFunctions.java:203)
+	|_	Mono.flatMap ? de.codecentric.boot.admin.server.web.client.InstanceExchangeFilterFunctions.lambda$convertLegacyEndpoint$8(InstanceExchangeFilterFunctions.java:153)
+	|_	Mono.flatMap ? de.codecentric.boot.admin.server.web.client.InstanceExchangeFilterFunctions.lambda$setInstance$1(InstanceExchangeFilterFunctions.java:76)
+	|_	Mono.switchIfEmpty ? org.springframework.web.reactive.function.client.DefaultWebClient$DefaultRequestBodyUriSpec.exchange(DefaultWebClient.java:321)
+	|_	Mono.log ? de.codecentric.boot.admin.server.services.StatusUpdater.doUpdateStatus(StatusUpdater.java:74)
+	|_	Mono.flatMap ? de.codecentric.boot.admin.server.services.StatusUpdater.doUpdateStatus(StatusUpdater.java:75)
+
+Caused by: java.net.ConnectException: Connection refused: no further information
+	... 10 common frames omitted
+
+2020-03-22 20:52:20.669  INFO 6900 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
