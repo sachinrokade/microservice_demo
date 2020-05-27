@@ -1,0 +1,17 @@
+*************** Hystirx Demo *****************
+
+which used for fallback if any service down in that case other service should be work
+it work like try cath this demo is self explanatory
+
+
+To open Hystrix Dashbord
+	
+	* http://localhost:8787/hystrix
+	
+	this Dashbord which is used for which methods are down and status of thread also
+
+To test web Service
+
+	* http://localhost:8787/
+	* http://localhost:8787/test1
+	* http://localhost:8787/test2
