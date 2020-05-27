@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>Admin_Hystrix_Demo</artifactId>
 	<version>0.0.1</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>Admin_Hystrix_Demo</name>
 	<description>Demo project for Spring Boot</description>
 
